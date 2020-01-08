@@ -25,4 +25,19 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  createProduct() {
+    const newProduct: Product = {
+      id: '222',
+      title: 'Esto es un producto CAR',
+      image: 'assets/images/banner-1.jpg',
+      price: 1,
+      description: 'prueba'
+    };
+
+    this.productService.createProduct(newProduct)
+    .subscribe((product: Product) => {
+      console.log(product);
+    });
+  }
+
 }

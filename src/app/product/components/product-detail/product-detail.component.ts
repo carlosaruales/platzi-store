@@ -40,4 +40,19 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  updateProduct() {
+    this.productService.updateProduct('222' , {
+      title: 'Actualice el producto CAR',
+      price: 10000
+    }).subscribe ((product: Product) => {
+      console.log(product);
+    });
+  }
+
+  deleteProduct() {
+    this.productService.deleteProduct('222').subscribe((rta) => {
+      console.log(rta);
+    });
+  }
+
 }

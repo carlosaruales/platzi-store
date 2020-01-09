@@ -11,6 +11,11 @@ import { MatRadioModule } from '@angular/material/radio';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 
 @NgModule({
@@ -29,7 +34,11 @@ import { MatListModule } from '@angular/material/list';
     MatRadioModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatSortModule
   ],
   exports: [
     MatButtonModule,
@@ -42,7 +51,11 @@ import { MatListModule } from '@angular/material/list';
     MatRadioModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatGridListModule,
+    MatMenuModule,
+    MatSortModule
   ]
 })
 export class MaterialModule { }

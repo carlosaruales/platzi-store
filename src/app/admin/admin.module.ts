@@ -6,11 +6,12 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { MaterialModule } from '../material/material.module';
 import { NavComponent } from './components/nav/nav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductsListComponent } from './components/products-list/products-list.component';
 
 
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent],
+  declarations: [ProductFormComponent, NavComponent, ProductsListComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
